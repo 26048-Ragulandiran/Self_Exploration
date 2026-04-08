@@ -5,9 +5,31 @@ VisualStudioVersion = 17.14.37012.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "COMClient", "src\COMClient\COMClient.csproj", "{BDC3DAC5-B39E-4658-92A5-4B0F3949E235}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "COMServer", "src\COMServer\COMServer.fsproj", "{10CEC553-B965-4854-A161-420682839D67}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BDC3DAC5-B39E-4658-92A5-4B0F3949E235}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDC3DAC5-B39E-4658-92A5-4B0F3949E235}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDC3DAC5-B39E-4658-92A5-4B0F3949E235}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDC3DAC5-B39E-4658-92A5-4B0F3949E235}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10CEC553-B965-4854-A161-420682839D67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10CEC553-B965-4854-A161-420682839D67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10CEC553-B965-4854-A161-420682839D67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10CEC553-B965-4854-A161-420682839D67}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BDC3DAC5-B39E-4658-92A5-4B0F3949E235} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{10CEC553-B965-4854-A161-420682839D67} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AF60D298-A99F-45B8-AA82-8FD55449AC9D}
