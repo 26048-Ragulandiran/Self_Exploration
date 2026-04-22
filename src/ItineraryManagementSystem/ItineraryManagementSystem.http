@@ -1,0 +1,6 @@
+@ItineraryManagementSystem_HostAddress = http://localhost:5151
+
+GET {{ItineraryManagementSystem_HostAddress}}/
+Accept: application/json
+
+###
