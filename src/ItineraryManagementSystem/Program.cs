@@ -1,7 +1,9 @@
 ﻿using DotNetEnv;
 using FluentValidation;
 using FluentValidation.AspNetCore;
+using ItineraryManagementSystem.Interfaces;
 using ItineraryManagementSystem.Models;
+using ItineraryManagementSystem.Services;
 using ItineraryManagementSystem.Validators;
 using Microsoft.EntityFrameworkCore;
 
@@ -23,7 +25,8 @@ namespace ItineraryManagementSystem
             builder.Services.AddSwaggerGen();
             builder.Services.AddFluentValidationAutoValidation();
             builder.Services.AddValidatorsFromAssemblyContaining<CreateItineraryValidator>();
-
+            builder.Services.AddScoped<IItineraryRepository, ItineraryRepository>();
+            builder.Services.AddScoped<IItineraryService, ItineraryService>();
             builder.Services.AddDbContext<ItineraryDbContext>(options =>
                 options.UseMySql(connectionString,
                 ServerVersion.AutoDetect(connectionString)));
