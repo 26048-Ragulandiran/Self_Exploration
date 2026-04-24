@@ -1,13 +1,13 @@
 ﻿namespace ItineraryManagementSystem.Common
 {
-    public class Response
+    public class Response<T>
     {
         public bool IsSuccess { get; set; }
 
         public string Message { get; set; } = string.Empty;
 
-        public object? Data { get; set; }
+        public T? Data { get; set; }
 
-        public object? Query { get; set; }
+        public object? Meta { get; set; }
     }
 }

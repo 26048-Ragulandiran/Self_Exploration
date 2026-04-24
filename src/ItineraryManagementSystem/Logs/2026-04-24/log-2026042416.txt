@@ -1,0 +1,279 @@
+2026-04-24 16:24:52.547 +05:30 [INF] Now listening on: https://localhost:7118
+2026-04-24 16:24:52.734 +05:30 [INF] Now listening on: http://localhost:5151
+2026-04-24 16:24:53.488 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-24 16:24:53.493 +05:30 [INF] Hosting environment: Development
+2026-04-24 16:24:53.503 +05:30 [INF] Content root path: C:\Users\ragulandiran.magesh\Documents\Self_Exploration\src\ItineraryManagementSystem
+2026-04-24 16:24:55.969 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7118/itinerary/index.html - null null
+2026-04-24 16:24:56.727 +05:30 [INF] HTTP GET /itinerary/index.html responded 200 in 479.9295 ms
+2026-04-24 16:24:56.796 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7118/itinerary/index.html - 200 null text/html;charset=utf-8 869.0676ms
+2026-04-24 16:24:56.930 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7118/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-24 16:24:57.008 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7118/_framework/aspnetcore-browser-refresh.js - 200 16535 application/javascript; charset=utf-8 77.6437ms
+2026-04-24 16:24:57.611 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7118/swagger/v1/swagger.json - null null
+2026-04-24 16:24:57.716 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 57.7731 ms
+2026-04-24 16:24:57.730 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7118/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 119.7787ms
+2026-04-24 16:25:22.321 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7118/itinerary/ItineraryGrpc/GetAll - application/grpc null
+2026-04-24 16:25:22.385 +05:30 [INF] HTTP POST /itinerary/ItineraryGrpc/GetAll responded 404 in 10.1436 ms
+2026-04-24 16:25:22.393 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7118/itinerary/ItineraryGrpc/GetAll - 404 0 null 72.8399ms
+2026-04-24 16:25:22.417 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST https://localhost:7118/itinerary/ItineraryGrpc/GetAll, Response status code: 404
+2026-04-24 16:26:48.458 +05:30 [INF] Now listening on: https://localhost:7118
+2026-04-24 16:26:48.658 +05:30 [INF] Now listening on: http://localhost:5151
+2026-04-24 16:26:49.285 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-24 16:26:49.292 +05:30 [INF] Hosting environment: Development
+2026-04-24 16:26:49.297 +05:30 [INF] Content root path: C:\Users\ragulandiran.magesh\Documents\Self_Exploration\src\ItineraryManagementSystem
+2026-04-24 16:26:50.569 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7118/itinerary/index.html - null null
+2026-04-24 16:26:51.362 +05:30 [INF] HTTP GET /itinerary/index.html responded 200 in 476.5866 ms
+2026-04-24 16:26:51.444 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7118/itinerary/index.html - 200 null text/html;charset=utf-8 909.0324ms
+2026-04-24 16:26:51.564 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7118/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-24 16:26:51.621 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7118/_framework/aspnetcore-browser-refresh.js - 200 16535 application/javascript; charset=utf-8 54.559ms
+2026-04-24 16:26:51.938 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7118/swagger/v1/swagger.json - null null
+2026-04-24 16:26:52.050 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 77.2023 ms
+2026-04-24 16:26:52.076 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7118/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 140.0869ms
+2026-04-24 16:27:33.466 +05:30 [INF] Request starting HTTP/2 POST http://localhost:5151/ItineraryGrpc/GetAll - application/grpc null
+2026-04-24 16:27:33.526 +05:30 [INF] HTTP POST /ItineraryGrpc/GetAll responded 307 in 13.2929 ms
+2026-04-24 16:27:33.545 +05:30 [INF] Request finished HTTP/2 POST http://localhost:5151/ItineraryGrpc/GetAll - 307 0 null 78.9408ms
+2026-04-24 16:27:50.473 +05:30 [INF] Request starting HTTP/2 POST http://localhost:5151/ItineraryGrpc/GetAll - application/grpc null
+2026-04-24 16:27:50.491 +05:30 [INF] HTTP POST /ItineraryGrpc/GetAll responded 307 in 0.3475 ms
+2026-04-24 16:27:50.499 +05:30 [INF] Request finished HTTP/2 POST http://localhost:5151/ItineraryGrpc/GetAll - 307 0 null 25.5494ms
+2026-04-24 16:35:15.765 +05:30 [INF] Now listening on: https://localhost:7118
+2026-04-24 16:35:15.935 +05:30 [INF] Now listening on: http://localhost:5151
+2026-04-24 16:35:16.160 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-24 16:35:16.165 +05:30 [INF] Hosting environment: Development
+2026-04-24 16:35:16.170 +05:30 [INF] Content root path: C:\Users\ragulandiran.magesh\Documents\Self_Exploration\src\ItineraryManagementSystem
+2026-04-24 16:35:17.512 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7118/itinerary/index.html - null null
+2026-04-24 16:35:18.071 +05:30 [INF] HTTP GET /itinerary/index.html responded 200 in 361.5677 ms
+2026-04-24 16:35:18.108 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7118/itinerary/index.html - 200 null text/html;charset=utf-8 623.2646ms
+2026-04-24 16:35:18.242 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7118/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-24 16:35:18.297 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7118/_framework/aspnetcore-browser-refresh.js - 200 16535 application/javascript; charset=utf-8 55.4699ms
+2026-04-24 16:35:18.429 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7118/swagger/v1/swagger.json - null null
+2026-04-24 16:35:18.510 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 47.3233 ms
+2026-04-24 16:35:18.533 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7118/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 105.3211ms
+2026-04-24 16:38:56.969 +05:30 [WRN] Overriding address(es) 'https://localhost:7118, http://localhost:5151'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2026-04-24 16:38:57.304 +05:30 [INF] Now listening on: https://localhost:7118
+2026-04-24 16:38:57.666 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-24 16:38:57.671 +05:30 [INF] Hosting environment: Development
+2026-04-24 16:38:57.675 +05:30 [INF] Content root path: C:\Users\ragulandiran.magesh\Documents\Self_Exploration\src\ItineraryManagementSystem
+2026-04-24 16:38:59.189 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7118/itinerary/index.html - null null
+2026-04-24 16:39:00.406 +05:30 [INF] HTTP GET /itinerary/index.html responded 200 in 761.4643 ms
+2026-04-24 16:39:00.494 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7118/itinerary/index.html - 200 null text/html;charset=utf-8 1383.5592ms
+2026-04-24 16:39:00.652 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7118/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-24 16:39:00.734 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7118/_framework/aspnetcore-browser-refresh.js - 200 16535 application/javascript; charset=utf-8 84.8285ms
+2026-04-24 16:39:01.286 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7118/swagger/v1/swagger.json - null null
+2026-04-24 16:39:01.372 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 48.4800 ms
+2026-04-24 16:39:01.391 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7118/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 106.1106ms
+2026-04-24 16:39:02.245 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7118/ItineraryGrpc/GetAll - application/grpc null
+2026-04-24 16:39:02.302 +05:30 [INF] Executing endpoint 'gRPC - /ItineraryGrpc/GetAll'
+2026-04-24 16:39:04.103 +05:30 [INF] gRPC GetAll called
+2026-04-24 16:39:04.125 +05:30 [INF] Fetching itineraries with query {"Destination":"","TravelDate":null,"PageNumber":1,"PageSize":10,"$type":"ItineraryQueryParams"}
+2026-04-24 16:39:04.217 +05:30 [INF] Applying filters in repository
+2026-04-24 16:39:07.519 +05:30 [INF] Executed DbCommand (120ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `Itineraries` AS `i`
+2026-04-24 16:39:07.823 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2026-04-24 16:39:07.832 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2026-04-24 16:39:08.405 +05:30 [INF] Executed DbCommand (103ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `i`.`Id`, `i`.`Destination`, `i`.`DurationDays`, `i`.`TravelDate`
+FROM `Itineraries` AS `i`
+LIMIT @__p_1 OFFSET @__p_0
+2026-04-24 16:39:08.735 +05:30 [INF] Executed endpoint 'gRPC - /ItineraryGrpc/GetAll'
+2026-04-24 16:39:08.750 +05:30 [INF] HTTP POST /ItineraryGrpc/GetAll responded 200 in 6473.1281 ms
+2026-04-24 16:39:08.795 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7118/ItineraryGrpc/GetAll - 200 null application/grpc 6550.0668ms
+2026-04-24 16:39:17.199 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7118/api/ItineraryApi - null null
+2026-04-24 16:39:17.220 +05:30 [INF] Executing endpoint 'ItineraryManagementSystem.Controllers.ItineraryApi.GetItineraries (ItineraryManagementSystem)'
+2026-04-24 16:39:17.357 +05:30 [INF] Route matched with {action = "GetItineraries", controller = "ItineraryApi"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetItineraries(ItineraryManagementSystem.Models.ItineraryQueryParams) on controller ItineraryManagementSystem.Controllers.ItineraryApi (ItineraryManagementSystem).
+2026-04-24 16:39:18.322 +05:30 [INF] Fetching itineraries with query {"Destination":null,"TravelDate":null,"PageNumber":1,"PageSize":5,"$type":"ItineraryQueryParams"}
+2026-04-24 16:39:18.354 +05:30 [INF] Applying filters in repository
+2026-04-24 16:39:18.455 +05:30 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `Itineraries` AS `i`
+2026-04-24 16:39:18.502 +05:30 [INF] Executed DbCommand (11ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `i`.`Id`, `i`.`Destination`, `i`.`DurationDays`, `i`.`TravelDate`
+FROM `Itineraries` AS `i`
+LIMIT @__p_1 OFFSET @__p_0
+2026-04-24 16:39:18.615 +05:30 [INF] Executing OkObjectResult, writing value of type 'ItineraryManagementSystem.Common.Response`1[[ItineraryManagementSystem.Common.PagedResult`1[[ItineraryManagementSystem.DTOs.ItineraryDto, ItineraryManagementSystem, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], ItineraryManagementSystem, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-24 16:39:18.729 +05:30 [INF] Executed action ItineraryManagementSystem.Controllers.ItineraryApi.GetItineraries (ItineraryManagementSystem) in 1342.7838ms
+2026-04-24 16:39:18.746 +05:30 [INF] Executed endpoint 'ItineraryManagementSystem.Controllers.ItineraryApi.GetItineraries (ItineraryManagementSystem)'
+2026-04-24 16:39:18.773 +05:30 [INF] HTTP GET /api/ItineraryApi responded 200 in 1553.4979 ms
+2026-04-24 16:39:18.799 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7118/api/ItineraryApi - 200 null application/json; charset=utf-8 1600.6848ms
+2026-04-24 16:41:12.454 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7118/ItineraryGrpc/Update - application/grpc null
+2026-04-24 16:41:12.493 +05:30 [INF] Executing endpoint 'gRPC - /ItineraryGrpc/Update'
+2026-04-24 16:41:12.567 +05:30 [INF] gRPC Update 0
+2026-04-24 16:41:13.692 +05:30 [ERR] Error when executing service method 'Update'.
+System.FormatException: String '' was not recognized as a valid DateTime.
+   at System.DateTimeParse.Parse(ReadOnlySpan`1 s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   at System.DateTime.Parse(String s)
+   at ItineraryManagementSystem.Grpc.ItineraryGrpcService.Update(UpdateRequest request, ServerCallContext context) in C:\Users\ragulandiran.magesh\Documents\Self_Exploration\src\ItineraryManagementSystem\Services\Grpc\ItineraryGrpcService.cs:line 118
+   at Grpc.Shared.Server.UnaryServerMethodInvoker`3.AwaitInvoker(Task`1 invokerTask, GrpcActivatorHandle`1 serviceHandle)
+   at Grpc.Shared.Server.UnaryServerMethodInvoker`3.AwaitInvoker(Task`1 invokerTask, GrpcActivatorHandle`1 serviceHandle)
+   at Grpc.AspNetCore.Server.Internal.CallHandlers.UnaryServerCallHandler`3.HandleCallAsyncCore(HttpContext httpContext, HttpContextServerCallContext serverCallContext)
+   at Grpc.AspNetCore.Server.Internal.CallHandlers.ServerCallHandlerBase`3.<HandleCallAsync>g__AwaitHandleCall|8_0(HttpContextServerCallContext serverCallContext, Method`2 method, Task handleCall)
+2026-04-24 16:41:13.901 +05:30 [INF] Executed endpoint 'gRPC - /ItineraryGrpc/Update'
+2026-04-24 16:41:13.906 +05:30 [INF] HTTP POST /ItineraryGrpc/Update responded 200 in 1412.8320 ms
+2026-04-24 16:41:13.921 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7118/ItineraryGrpc/Update - 200 0 application/grpc 1466.7699ms
+2026-04-24 16:41:21.822 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7118/ItineraryGrpc/Create - application/grpc null
+2026-04-24 16:41:21.866 +05:30 [INF] Executing endpoint 'gRPC - /ItineraryGrpc/Create'
+2026-04-24 16:41:21.922 +05:30 [INF] gRPC Create 
+2026-04-24 16:41:22.188 +05:30 [ERR] Error when executing service method 'Create'.
+System.FormatException: String '' was not recognized as a valid DateTime.
+   at System.DateTimeParse.Parse(ReadOnlySpan`1 s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   at System.DateTime.Parse(String s)
+   at ItineraryManagementSystem.Grpc.ItineraryGrpcService.Create(CreateRequest request, ServerCallContext context) in C:\Users\ragulandiran.magesh\Documents\Self_Exploration\src\ItineraryManagementSystem\Services\Grpc\ItineraryGrpcService.cs:line 89
+   at Grpc.Shared.Server.UnaryServerMethodInvoker`3.AwaitInvoker(Task`1 invokerTask, GrpcActivatorHandle`1 serviceHandle)
+   at Grpc.Shared.Server.UnaryServerMethodInvoker`3.AwaitInvoker(Task`1 invokerTask, GrpcActivatorHandle`1 serviceHandle)
+   at Grpc.AspNetCore.Server.Internal.CallHandlers.UnaryServerCallHandler`3.HandleCallAsyncCore(HttpContext httpContext, HttpContextServerCallContext serverCallContext)
+   at Grpc.AspNetCore.Server.Internal.CallHandlers.ServerCallHandlerBase`3.<HandleCallAsync>g__AwaitHandleCall|8_0(HttpContextServerCallContext serverCallContext, Method`2 method, Task handleCall)
+2026-04-24 16:41:22.201 +05:30 [INF] Executed endpoint 'gRPC - /ItineraryGrpc/Create'
+2026-04-24 16:41:22.211 +05:30 [INF] HTTP POST /ItineraryGrpc/Create responded 200 in 345.0153 ms
+2026-04-24 16:41:22.218 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7118/ItineraryGrpc/Create - 200 0 application/grpc 398.7739ms
+2026-04-24 16:41:33.832 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7118/ItineraryGrpc/Create - application/grpc null
+2026-04-24 16:41:33.846 +05:30 [INF] Executing endpoint 'gRPC - /ItineraryGrpc/Create'
+2026-04-24 16:41:33.888 +05:30 [INF] gRPC Create 
+2026-04-24 16:41:34.120 +05:30 [ERR] Error when executing service method 'Create'.
+System.FormatException: String '' was not recognized as a valid DateTime.
+   at System.DateTimeParse.Parse(ReadOnlySpan`1 s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   at System.DateTime.Parse(String s)
+   at ItineraryManagementSystem.Grpc.ItineraryGrpcService.Create(CreateRequest request, ServerCallContext context) in C:\Users\ragulandiran.magesh\Documents\Self_Exploration\src\ItineraryManagementSystem\Services\Grpc\ItineraryGrpcService.cs:line 89
+   at Grpc.Shared.Server.UnaryServerMethodInvoker`3.AwaitInvoker(Task`1 invokerTask, GrpcActivatorHandle`1 serviceHandle)
+   at Grpc.Shared.Server.UnaryServerMethodInvoker`3.AwaitInvoker(Task`1 invokerTask, GrpcActivatorHandle`1 serviceHandle)
+   at Grpc.AspNetCore.Server.Internal.CallHandlers.UnaryServerCallHandler`3.HandleCallAsyncCore(HttpContext httpContext, HttpContextServerCallContext serverCallContext)
+   at Grpc.AspNetCore.Server.Internal.CallHandlers.ServerCallHandlerBase`3.<HandleCallAsync>g__AwaitHandleCall|8_0(HttpContextServerCallContext serverCallContext, Method`2 method, Task handleCall)
+2026-04-24 16:41:34.139 +05:30 [INF] Executed endpoint 'gRPC - /ItineraryGrpc/Create'
+2026-04-24 16:41:34.151 +05:30 [INF] HTTP POST /ItineraryGrpc/Create responded 200 in 305.7797 ms
+2026-04-24 16:41:34.168 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7118/ItineraryGrpc/Create - 200 0 application/grpc 335.6957ms
+2026-04-24 16:42:33.550 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7118/ItineraryGrpc/Create - application/grpc null
+2026-04-24 16:42:33.563 +05:30 [INF] Executing endpoint 'gRPC - /ItineraryGrpc/Create'
+2026-04-24 16:42:33.615 +05:30 [INF] gRPC Create 
+2026-04-24 16:42:33.868 +05:30 [ERR] Error when executing service method 'Create'.
+System.FormatException: String '' was not recognized as a valid DateTime.
+   at System.DateTimeParse.Parse(ReadOnlySpan`1 s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   at System.DateTime.Parse(String s)
+   at ItineraryManagementSystem.Grpc.ItineraryGrpcService.Create(CreateRequest request, ServerCallContext context) in C:\Users\ragulandiran.magesh\Documents\Self_Exploration\src\ItineraryManagementSystem\Services\Grpc\ItineraryGrpcService.cs:line 89
+   at Grpc.Shared.Server.UnaryServerMethodInvoker`3.AwaitInvoker(Task`1 invokerTask, GrpcActivatorHandle`1 serviceHandle)
+   at Grpc.Shared.Server.UnaryServerMethodInvoker`3.AwaitInvoker(Task`1 invokerTask, GrpcActivatorHandle`1 serviceHandle)
+   at Grpc.AspNetCore.Server.Internal.CallHandlers.UnaryServerCallHandler`3.HandleCallAsyncCore(HttpContext httpContext, HttpContextServerCallContext serverCallContext)
+   at Grpc.AspNetCore.Server.Internal.CallHandlers.ServerCallHandlerBase`3.<HandleCallAsync>g__AwaitHandleCall|8_0(HttpContextServerCallContext serverCallContext, Method`2 method, Task handleCall)
+2026-04-24 16:42:33.882 +05:30 [INF] Executed endpoint 'gRPC - /ItineraryGrpc/Create'
+2026-04-24 16:42:33.887 +05:30 [INF] HTTP POST /ItineraryGrpc/Create responded 200 in 324.1091 ms
+2026-04-24 16:42:33.897 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7118/ItineraryGrpc/Create - 200 0 application/grpc 347.6498ms
+2026-04-24 16:42:50.839 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7118/ItineraryGrpc/Create - application/grpc null
+2026-04-24 16:42:50.855 +05:30 [INF] Executing endpoint 'gRPC - /ItineraryGrpc/Create'
+2026-04-24 16:42:50.895 +05:30 [INF] gRPC Create 
+2026-04-24 16:42:51.115 +05:30 [ERR] Error when executing service method 'Create'.
+System.FormatException: String '' was not recognized as a valid DateTime.
+   at System.DateTimeParse.Parse(ReadOnlySpan`1 s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   at System.DateTime.Parse(String s)
+   at ItineraryManagementSystem.Grpc.ItineraryGrpcService.Create(CreateRequest request, ServerCallContext context) in C:\Users\ragulandiran.magesh\Documents\Self_Exploration\src\ItineraryManagementSystem\Services\Grpc\ItineraryGrpcService.cs:line 89
+   at Grpc.Shared.Server.UnaryServerMethodInvoker`3.AwaitInvoker(Task`1 invokerTask, GrpcActivatorHandle`1 serviceHandle)
+   at Grpc.Shared.Server.UnaryServerMethodInvoker`3.AwaitInvoker(Task`1 invokerTask, GrpcActivatorHandle`1 serviceHandle)
+   at Grpc.AspNetCore.Server.Internal.CallHandlers.UnaryServerCallHandler`3.HandleCallAsyncCore(HttpContext httpContext, HttpContextServerCallContext serverCallContext)
+   at Grpc.AspNetCore.Server.Internal.CallHandlers.ServerCallHandlerBase`3.<HandleCallAsync>g__AwaitHandleCall|8_0(HttpContextServerCallContext serverCallContext, Method`2 method, Task handleCall)
+2026-04-24 16:42:51.126 +05:30 [INF] Executed endpoint 'gRPC - /ItineraryGrpc/Create'
+2026-04-24 16:42:51.128 +05:30 [INF] HTTP POST /ItineraryGrpc/Create responded 200 in 273.5958 ms
+2026-04-24 16:42:51.133 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7118/ItineraryGrpc/Create - 200 0 application/grpc 294.6105ms
+2026-04-24 16:43:54.352 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7118/ItineraryGrpc/Create - application/grpc null
+2026-04-24 16:43:54.375 +05:30 [INF] Executing endpoint 'gRPC - /ItineraryGrpc/Create'
+2026-04-24 16:43:54.431 +05:30 [INF] gRPC Create Chennai
+2026-04-24 16:43:54.456 +05:30 [INF] Creating itinerary for Chennai
+2026-04-24 16:43:55.576 +05:30 [INF] Executed DbCommand (21ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Itineraries` (`Destination`, `DurationDays`, `TravelDate`)
+VALUES (@p0, @p1, @p2);
+SELECT `Id`
+FROM `Itineraries`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2026-04-24 16:43:55.727 +05:30 [INF] Inserted itinerary with Id 10
+2026-04-24 16:43:55.740 +05:30 [INF] Itinerary created with Id 10
+2026-04-24 16:43:55.744 +05:30 [INF] Executed endpoint 'gRPC - /ItineraryGrpc/Create'
+2026-04-24 16:43:55.752 +05:30 [INF] HTTP POST /ItineraryGrpc/Create responded 200 in 1377.4206 ms
+2026-04-24 16:43:55.762 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7118/ItineraryGrpc/Create - 200 null application/grpc 1409.9011ms
+2026-04-24 16:44:33.322 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7118/1/ItineraryGrpc/Update - application/grpc null
+2026-04-24 16:44:33.345 +05:30 [INF] HTTP POST /1/ItineraryGrpc/Update responded 404 in 0.9237 ms
+2026-04-24 16:44:33.373 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7118/1/ItineraryGrpc/Update - 404 0 null 52.7486ms
+2026-04-24 16:44:33.417 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST https://localhost:7118/1/ItineraryGrpc/Update, Response status code: 404
+2026-04-24 16:44:37.530 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7118/1/ItineraryGrpc/Update - application/grpc null
+2026-04-24 16:44:37.555 +05:30 [INF] HTTP POST /1/ItineraryGrpc/Update responded 404 in 0.1005 ms
+2026-04-24 16:44:37.563 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7118/1/ItineraryGrpc/Update - 404 0 null 32.0375ms
+2026-04-24 16:44:37.597 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST https://localhost:7118/1/ItineraryGrpc/Update, Response status code: 404
+2026-04-24 16:45:15.463 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7118/ItineraryGrpc/Update - application/grpc null
+2026-04-24 16:45:15.474 +05:30 [INF] Executing endpoint 'gRPC - /ItineraryGrpc/Update'
+2026-04-24 16:45:15.526 +05:30 [INF] gRPC Update 1
+2026-04-24 16:45:15.549 +05:30 [INF] Updating itinerary Id 1
+2026-04-24 16:45:15.904 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `i`.`Id`, `i`.`Destination`, `i`.`DurationDays`, `i`.`TravelDate`
+FROM `Itineraries` AS `i`
+WHERE `i`.`Id` = @__p_0
+LIMIT 1
+2026-04-24 16:45:16.042 +05:30 [INF] Executed DbCommand (15ms) [Parameters=[@p3='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+UPDATE `Itineraries` SET `Destination` = @p0, `DurationDays` = @p1, `TravelDate` = @p2
+WHERE `Id` = @p3;
+SELECT ROW_COUNT();
+2026-04-24 16:45:16.067 +05:30 [INF] Update operation status: true for Id 1
+2026-04-24 16:45:16.074 +05:30 [INF] Update status true for Id 1
+2026-04-24 16:45:16.094 +05:30 [INF] Executed endpoint 'gRPC - /ItineraryGrpc/Update'
+2026-04-24 16:45:16.099 +05:30 [INF] HTTP POST /ItineraryGrpc/Update responded 200 in 624.8092 ms
+2026-04-24 16:45:16.106 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7118/ItineraryGrpc/Update - 200 null application/grpc 643.6184ms
+2026-04-24 16:47:20.845 +05:30 [WRN] Overriding address(es) 'https://localhost:7118, http://localhost:5151'. Binding to endpoints defined via IConfiguration and/or UseKestrel() instead.
+2026-04-24 16:47:21.185 +05:30 [INF] Now listening on: https://localhost:7118
+2026-04-24 16:47:21.700 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-24 16:47:21.710 +05:30 [INF] Hosting environment: Development
+2026-04-24 16:47:21.715 +05:30 [INF] Content root path: C:\Users\ragulandiran.magesh\Documents\Self_Exploration\src\ItineraryManagementSystem
+2026-04-24 16:47:23.393 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7118/itinerary/index.html - null null
+2026-04-24 16:47:23.868 +05:30 [INF] HTTP GET /itinerary/index.html responded 200 in 201.4840 ms
+2026-04-24 16:47:24.053 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7118/itinerary/index.html - 200 null text/html;charset=utf-8 680.0203ms
+2026-04-24 16:47:24.262 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7118/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-24 16:47:24.342 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7118/_framework/aspnetcore-browser-refresh.js - 200 16535 application/javascript; charset=utf-8 81.243ms
+2026-04-24 16:47:24.718 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7118/swagger/v1/swagger.json - null null
+2026-04-24 16:47:24.779 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 34.1004 ms
+2026-04-24 16:47:24.806 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7118/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 88.0715ms
+2026-04-24 16:47:29.828 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7118/ItineraryGrpc/GetAll - application/grpc null
+2026-04-24 16:47:29.876 +05:30 [INF] Executing endpoint 'gRPC - /ItineraryGrpc/GetAll'
+2026-04-24 16:47:31.414 +05:30 [INF] gRPC GetAll called
+2026-04-24 16:47:31.443 +05:30 [INF] Fetching itineraries with query {"Destination":"Bangalore","TravelDate":"2026-05-01T00:00:00.0000000","PageNumber":1,"PageSize":10,"$type":"ItineraryQueryParams"}
+2026-04-24 16:47:31.579 +05:30 [INF] Applying filters in repository
+2026-04-24 16:47:35.369 +05:30 [INF] Executed DbCommand (364ms) [Parameters=[@__query_Destination_0_contains='?' (Size = 4000), @__query_TravelDate_Value_Date_1='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `Itineraries` AS `i`
+WHERE (`i`.`Destination` LIKE @__query_Destination_0_contains) AND (CONVERT(`i`.`TravelDate`, date) = @__query_TravelDate_Value_Date_1)
+2026-04-24 16:47:35.746 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2026-04-24 16:47:35.755 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2026-04-24 16:47:35.973 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@__query_Destination_0_contains='?' (Size = 4000), @__query_TravelDate_Value_Date_1='?' (DbType = DateTime), @__p_3='?' (DbType = Int32), @__p_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `i`.`Id`, `i`.`Destination`, `i`.`DurationDays`, `i`.`TravelDate`
+FROM `Itineraries` AS `i`
+WHERE (`i`.`Destination` LIKE @__query_Destination_0_contains) AND (CONVERT(`i`.`TravelDate`, date) = @__query_TravelDate_Value_Date_1)
+LIMIT @__p_3 OFFSET @__p_2
+2026-04-24 16:47:36.503 +05:30 [INF] Executed endpoint 'gRPC - /ItineraryGrpc/GetAll'
+2026-04-24 16:47:36.519 +05:30 [INF] HTTP POST /ItineraryGrpc/GetAll responded 200 in 6660.9670 ms
+2026-04-24 16:47:36.580 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7118/ItineraryGrpc/GetAll - 200 null application/grpc 6752.1269ms
+2026-04-24 16:47:50.407 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7118/ItineraryGrpc/GetAll - application/grpc null
+2026-04-24 16:47:50.424 +05:30 [INF] Executing endpoint 'gRPC - /ItineraryGrpc/GetAll'
+2026-04-24 16:47:50.490 +05:30 [INF] gRPC GetAll called
+2026-04-24 16:47:50.503 +05:30 [INF] Fetching itineraries with query {"Destination":"","TravelDate":null,"PageNumber":1,"PageSize":10,"$type":"ItineraryQueryParams"}
+2026-04-24 16:47:50.536 +05:30 [INF] Applying filters in repository
+2026-04-24 16:47:50.633 +05:30 [INF] Executed DbCommand (32ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `Itineraries` AS `i`
+2026-04-24 16:47:50.650 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2026-04-24 16:47:50.662 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2026-04-24 16:47:50.695 +05:30 [INF] Executed DbCommand (9ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `i`.`Id`, `i`.`Destination`, `i`.`DurationDays`, `i`.`TravelDate`
+FROM `Itineraries` AS `i`
+LIMIT @__p_1 OFFSET @__p_0
+2026-04-24 16:47:50.715 +05:30 [INF] Executed endpoint 'gRPC - /ItineraryGrpc/GetAll'
+2026-04-24 16:47:50.719 +05:30 [INF] HTTP POST /ItineraryGrpc/GetAll responded 200 in 295.2892 ms
+2026-04-24 16:47:50.734 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7118/ItineraryGrpc/GetAll - 200 null application/grpc 329.2516ms
+2026-04-24 16:51:05.940 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7118/api/ItineraryApi - null null
+2026-04-24 16:51:05.946 +05:30 [INF] Executing endpoint 'ItineraryManagementSystem.Controllers.ItineraryApi.GetItineraries (ItineraryManagementSystem)'
+2026-04-24 16:51:05.976 +05:30 [INF] Route matched with {action = "GetItineraries", controller = "ItineraryApi"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetItineraries(ItineraryManagementSystem.Models.ItineraryQueryParams) on controller ItineraryManagementSystem.Controllers.ItineraryApi (ItineraryManagementSystem).
+2026-04-24 16:51:06.100 +05:30 [INF] Fetching itineraries with query {"Destination":null,"TravelDate":null,"PageNumber":1,"PageSize":5,"$type":"ItineraryQueryParams"}
+2026-04-24 16:51:06.113 +05:30 [INF] Applying filters in repository
+2026-04-24 16:51:06.198 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `Itineraries` AS `i`
+2026-04-24 16:51:06.221 +05:30 [INF] Executed DbCommand (14ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `i`.`Id`, `i`.`Destination`, `i`.`DurationDays`, `i`.`TravelDate`
+FROM `Itineraries` AS `i`
+LIMIT @__p_1 OFFSET @__p_0
+2026-04-24 16:51:06.243 +05:30 [INF] Executing OkObjectResult, writing value of type 'ItineraryManagementSystem.Common.Response`1[[ItineraryManagementSystem.Common.PagedResult`1[[ItineraryManagementSystem.DTOs.ItineraryDto, ItineraryManagementSystem, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], ItineraryManagementSystem, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-24 16:51:06.272 +05:30 [INF] Executed action ItineraryManagementSystem.Controllers.ItineraryApi.GetItineraries (ItineraryManagementSystem) in 288.46ms
+2026-04-24 16:51:06.277 +05:30 [INF] Executed endpoint 'ItineraryManagementSystem.Controllers.ItineraryApi.GetItineraries (ItineraryManagementSystem)'
+2026-04-24 16:51:06.280 +05:30 [INF] HTTP GET /api/ItineraryApi responded 200 in 333.7847 ms
+2026-04-24 16:51:06.286 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7118/api/ItineraryApi - 200 null application/json; charset=utf-8 346.7242ms

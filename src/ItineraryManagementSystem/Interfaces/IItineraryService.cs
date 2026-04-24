@@ -6,10 +6,10 @@ namespace ItineraryManagementSystem.Interfaces
 {
     public interface IItineraryService
     {
-        Task<Response> GetAsync(ItineraryQueryParams query);
-        Task<Response> GetByIdAsync(int id);
-        Task<Response> CreateAsync(CreateItineraryDto dto);
-        Task<Response> UpdateAsync(int id, UpdateItineraryDto dto);
-        Task<Response> DeleteAsync(int id);
+        Task<Response<ItineraryDto>> CreateAsync(CreateItineraryDto dto);
+        Task<Response<bool>> DeleteAsync(int id);
+        Task<Response<PagedResult<ItineraryDto>>> GetAsync(ItineraryQueryParams query);
+        Task<Response<ItineraryDto>> GetByIdAsync(int id);
+        Task<Response<bool>> UpdateAsync(int id, UpdateItineraryDto dto);
     }
 }

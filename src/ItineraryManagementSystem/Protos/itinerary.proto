@@ -1,0 +1,61 @@
+syntax = "proto3";
+
+option csharp_namespace = "ItineraryManagementSystem.Grpc";
+
+service ItineraryGrpc {
+  rpc GetAll (GetAllRequest) returns (GetAllResponse);
+  rpc GetById (GetByIdRequest) returns (ItineraryResponse);
+  rpc Create (CreateRequest) returns (ItineraryResponse);
+  rpc Update (UpdateRequest) returns (UpdateResponse);
+  rpc Delete (DeleteRequest) returns (DeleteResponse);
+}
+
+message GetAllRequest {
+  string destination = 1;
+  string travelDate = 2;
+  int32 pageNumber = 3;
+  int32 pageSize = 4;
+}
+
+message GetByIdRequest {
+  int32 id = 1;
+}
+
+message CreateRequest {
+  string destination = 1;
+  string travelDate = 2;
+  int32 durationDays = 3;
+}
+
+message UpdateRequest {
+  int32 id = 1;
+  string destination = 2;
+  string travelDate = 3;
+  int32 durationDays = 4;
+}
+
+message DeleteRequest {
+  int32 id = 1;
+}
+
+message ItineraryResponse {
+  int32 id = 1;
+  string destination = 2;
+  string travelDate = 3;
+  int32 durationDays = 4;
+}
+
+message GetAllResponse {
+  repeated ItineraryResponse items = 1;
+  int32 totalCount = 2;
+}
+
+message UpdateResponse {
+  bool success = 1;
+  string message = 2;
+}
+
+message DeleteResponse {
+  bool success = 1;
+  string message = 2;
+}

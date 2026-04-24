@@ -1,0 +1,238 @@
+2026-04-24 15:36:49.475 +05:30 [INF] Now listening on: https://localhost:7118
+2026-04-24 15:36:49.628 +05:30 [INF] Now listening on: http://localhost:5151
+2026-04-24 15:36:50.429 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-24 15:36:50.451 +05:30 [INF] Hosting environment: Development
+2026-04-24 15:36:50.455 +05:30 [INF] Content root path: C:\Users\ragulandiran.magesh\Documents\Self_Exploration\src\ItineraryManagementSystem
+2026-04-24 15:36:52.557 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7118/itinerary/index.html - null null
+2026-04-24 15:36:53.232 +05:30 [INF] HTTP GET /itinerary/index.html responded 200 in 412.3638 ms
+2026-04-24 15:36:53.312 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7118/itinerary/index.html - 200 null text/html;charset=utf-8 804.4506ms
+2026-04-24 15:36:53.394 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7118/_framework/aspnetcore-browser-refresh.js - null null
+2026-04-24 15:36:53.506 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7118/_framework/aspnetcore-browser-refresh.js - 200 16535 application/javascript; charset=utf-8 113.0457ms
+2026-04-24 15:36:53.598 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7118/swagger/v1/swagger.json - null null
+2026-04-24 15:36:53.671 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 49.0738 ms
+2026-04-24 15:36:53.682 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7118/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 86.8079ms
+2026-04-24 15:36:59.105 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7118/api/ItineraryApi - null null
+2026-04-24 15:36:59.170 +05:30 [INF] Executing endpoint 'ItineraryManagementSystem.Controllers.ItineraryApi.GetItineraries (ItineraryManagementSystem)'
+2026-04-24 15:36:59.316 +05:30 [INF] Route matched with {action = "GetItineraries", controller = "ItineraryApi"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetItineraries(ItineraryManagementSystem.Models.ItineraryQueryParams) on controller ItineraryManagementSystem.Controllers.ItineraryApi (ItineraryManagementSystem).
+2026-04-24 15:37:01.188 +05:30 [INF] Fetching itineraries with query {"Destination":null,"TravelDate":null,"PageNumber":1,"PageSize":5,"$type":"ItineraryQueryParams"}
+2026-04-24 15:37:01.277 +05:30 [INF] Applying filters in repository
+2026-04-24 15:37:04.051 +05:30 [INF] Executed DbCommand (169ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `Itineraries` AS `i`
+2026-04-24 15:37:04.325 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2026-04-24 15:37:04.338 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2026-04-24 15:37:04.679 +05:30 [INF] Executed DbCommand (95ms) [Parameters=[@__p_1='?' (DbType = Int32), @__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `i`.`Id`, `i`.`Destination`, `i`.`DurationDays`, `i`.`TravelDate`
+FROM `Itineraries` AS `i`
+LIMIT @__p_1 OFFSET @__p_0
+2026-04-24 15:37:04.958 +05:30 [INF] Executing OkObjectResult, writing value of type 'ItineraryManagementSystem.Common.Response`1[[ItineraryManagementSystem.Common.PagedResult`1[[ItineraryManagementSystem.DTOs.ItineraryDto, ItineraryManagementSystem, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], ItineraryManagementSystem, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-24 15:37:05.061 +05:30 [INF] Executed action ItineraryManagementSystem.Controllers.ItineraryApi.GetItineraries (ItineraryManagementSystem) in 5710.0717ms
+2026-04-24 15:37:05.072 +05:30 [INF] Executed endpoint 'ItineraryManagementSystem.Controllers.ItineraryApi.GetItineraries (ItineraryManagementSystem)'
+2026-04-24 15:37:05.079 +05:30 [INF] HTTP GET /api/ItineraryApi responded 200 in 5944.1462 ms
+2026-04-24 15:37:05.121 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7118/api/ItineraryApi - 200 null application/json; charset=utf-8 6017.7341ms
+2026-04-24 15:37:13.535 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7118/api/ItineraryApi?PageNumber=2 - null null
+2026-04-24 15:37:13.553 +05:30 [INF] Executing endpoint 'ItineraryManagementSystem.Controllers.ItineraryApi.GetItineraries (ItineraryManagementSystem)'
+2026-04-24 15:37:13.563 +05:30 [INF] Route matched with {action = "GetItineraries", controller = "ItineraryApi"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetItineraries(ItineraryManagementSystem.Models.ItineraryQueryParams) on controller ItineraryManagementSystem.Controllers.ItineraryApi (ItineraryManagementSystem).
+2026-04-24 15:37:13.660 +05:30 [INF] Fetching itineraries with query {"Destination":null,"TravelDate":null,"PageNumber":2,"PageSize":5,"$type":"ItineraryQueryParams"}
+2026-04-24 15:37:13.678 +05:30 [INF] Applying filters in repository
+2026-04-24 15:37:13.758 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM `Itineraries` AS `i`
+2026-04-24 15:37:13.773 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2026-04-24 15:37:13.778 +05:30 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2026-04-24 15:37:13.810 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `i`.`Id`, `i`.`Destination`, `i`.`DurationDays`, `i`.`TravelDate`
+FROM `Itineraries` AS `i`
+LIMIT @__p_0 OFFSET @__p_0
+2026-04-24 15:37:13.824 +05:30 [INF] Executing OkObjectResult, writing value of type 'ItineraryManagementSystem.Common.Response`1[[ItineraryManagementSystem.Common.PagedResult`1[[ItineraryManagementSystem.DTOs.ItineraryDto, ItineraryManagementSystem, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], ItineraryManagementSystem, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-24 15:37:13.832 +05:30 [INF] Executed action ItineraryManagementSystem.Controllers.ItineraryApi.GetItineraries (ItineraryManagementSystem) in 250.1955ms
+2026-04-24 15:37:13.841 +05:30 [INF] Executed endpoint 'ItineraryManagementSystem.Controllers.ItineraryApi.GetItineraries (ItineraryManagementSystem)'
+2026-04-24 15:37:13.847 +05:30 [INF] HTTP GET /api/ItineraryApi responded 200 in 294.3221 ms
+2026-04-24 15:37:13.856 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7118/api/ItineraryApi?PageNumber=2 - 200 null application/json; charset=utf-8 321.7944ms
+2026-04-24 15:37:50.020 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7118/api/ItineraryApi - application/json 97
+2026-04-24 15:37:50.071 +05:30 [INF] Executing endpoint 'ItineraryManagementSystem.Controllers.ItineraryApi.Create (ItineraryManagementSystem)'
+2026-04-24 15:37:50.102 +05:30 [INF] Route matched with {action = "Create", controller = "ItineraryApi"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(ItineraryManagementSystem.DTOs.CreateItineraryDto) on controller ItineraryManagementSystem.Controllers.ItineraryApi (ItineraryManagementSystem).
+2026-04-24 15:37:50.317 +05:30 [INF] Creating itinerary for Bangaluru
+2026-04-24 15:37:51.059 +05:30 [INF] Executed DbCommand (68ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Itineraries` (`Destination`, `DurationDays`, `TravelDate`)
+VALUES (@p0, @p1, @p2);
+SELECT `Id`
+FROM `Itineraries`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+2026-04-24 15:37:51.221 +05:30 [INF] Inserted itinerary with Id 9
+2026-04-24 15:37:51.229 +05:30 [INF] Itinerary created with Id 9
+2026-04-24 15:37:51.238 +05:30 [INF] Executing OkObjectResult, writing value of type 'ItineraryManagementSystem.Common.Response`1[[ItineraryManagementSystem.DTOs.ItineraryDto, ItineraryManagementSystem, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-24 15:37:51.251 +05:30 [INF] Executed action ItineraryManagementSystem.Controllers.ItineraryApi.Create (ItineraryManagementSystem) in 1135.4273ms
+2026-04-24 15:37:51.258 +05:30 [INF] Executed endpoint 'ItineraryManagementSystem.Controllers.ItineraryApi.Create (ItineraryManagementSystem)'
+2026-04-24 15:37:51.268 +05:30 [INF] HTTP POST /api/ItineraryApi responded 200 in 1197.4003 ms
+2026-04-24 15:37:51.280 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7118/api/ItineraryApi - 200 null application/json; charset=utf-8 1259.4501ms
+2026-04-24 15:38:03.170 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7118/api/ItineraryApi/45 - null null
+2026-04-24 15:38:03.189 +05:30 [INF] Executing endpoint 'ItineraryManagementSystem.Controllers.ItineraryApi.GetById (ItineraryManagementSystem)'
+2026-04-24 15:38:03.218 +05:30 [INF] Route matched with {action = "GetById", controller = "ItineraryApi"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller ItineraryManagementSystem.Controllers.ItineraryApi (ItineraryManagementSystem).
+2026-04-24 15:38:03.284 +05:30 [INF] Fetching itinerary by Id 45
+2026-04-24 15:38:03.485 +05:30 [INF] Executed DbCommand (10ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `i`.`Id`, `i`.`Destination`, `i`.`DurationDays`, `i`.`TravelDate`
+FROM `Itineraries` AS `i`
+WHERE `i`.`Id` = @__p_0
+LIMIT 1
+2026-04-24 15:38:03.535 +05:30 [WRN] Itinerary not found for Id 45
+2026-04-24 15:38:03.541 +05:30 [INF] Executing NotFoundObjectResult, writing value of type 'ItineraryManagementSystem.Common.Response`1[[ItineraryManagementSystem.DTOs.ItineraryDto, ItineraryManagementSystem, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-24 15:38:03.553 +05:30 [INF] Executed action ItineraryManagementSystem.Controllers.ItineraryApi.GetById (ItineraryManagementSystem) in 314.0058ms
+2026-04-24 15:38:03.565 +05:30 [INF] Executed endpoint 'ItineraryManagementSystem.Controllers.ItineraryApi.GetById (ItineraryManagementSystem)'
+2026-04-24 15:38:03.572 +05:30 [INF] HTTP GET /api/ItineraryApi/45 responded 404 in 382.8643 ms
+2026-04-24 15:38:03.586 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7118/api/ItineraryApi/45 - 404 null application/json; charset=utf-8 415.5158ms
+2026-04-24 15:38:10.301 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7118/api/ItineraryApi/4 - null null
+2026-04-24 15:38:10.316 +05:30 [INF] Executing endpoint 'ItineraryManagementSystem.Controllers.ItineraryApi.GetById (ItineraryManagementSystem)'
+2026-04-24 15:38:10.322 +05:30 [INF] Route matched with {action = "GetById", controller = "ItineraryApi"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller ItineraryManagementSystem.Controllers.ItineraryApi (ItineraryManagementSystem).
+2026-04-24 15:38:10.370 +05:30 [INF] Fetching itinerary by Id 4
+2026-04-24 15:38:10.419 +05:30 [INF] Executed DbCommand (15ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `i`.`Id`, `i`.`Destination`, `i`.`DurationDays`, `i`.`TravelDate`
+FROM `Itineraries` AS `i`
+WHERE `i`.`Id` = @__p_0
+LIMIT 1
+2026-04-24 15:38:10.433 +05:30 [INF] Executing OkObjectResult, writing value of type 'ItineraryManagementSystem.Common.Response`1[[ItineraryManagementSystem.DTOs.ItineraryDto, ItineraryManagementSystem, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-04-24 15:38:10.440 +05:30 [INF] Executed action ItineraryManagementSystem.Controllers.ItineraryApi.GetById (ItineraryManagementSystem) in 108.5552ms
+2026-04-24 15:38:10.453 +05:30 [INF] Executed endpoint 'ItineraryManagementSystem.Controllers.ItineraryApi.GetById (ItineraryManagementSystem)'
+2026-04-24 15:38:10.458 +05:30 [INF] HTTP GET /api/ItineraryApi/4 responded 200 in 141.3792 ms
+2026-04-24 15:38:10.470 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7118/api/ItineraryApi/4 - 200 null application/json; charset=utf-8 169.7267ms
+2026-04-24 15:38:37.905 +05:30 [INF] Request starting HTTP/2 PUT https://localhost:7118/api/ItineraryApi/2 - application/json 109
+2026-04-24 15:38:37.928 +05:30 [INF] Executing endpoint 'ItineraryManagementSystem.Controllers.ItineraryApi.Update (ItineraryManagementSystem)'
+2026-04-24 15:38:37.968 +05:30 [INF] Route matched with {action = "Update", controller = "ItineraryApi"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(Int32, ItineraryManagementSystem.DTOs.UpdateItineraryDto) on controller ItineraryManagementSystem.Controllers.ItineraryApi (ItineraryManagementSystem).
+2026-04-24 15:38:38.038 +05:30 [INF] Updating itinerary Id 2
+2026-04-24 15:38:38.045 +05:30 [WRN] ID mismatch RouteId=2, BodyId=0
+2026-04-24 15:38:38.055 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'ItineraryManagementSystem.Common.Response`1[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-04-24 15:38:38.069 +05:30 [INF] Executed action ItineraryManagementSystem.Controllers.ItineraryApi.Update (ItineraryManagementSystem) in 83.5306ms
+2026-04-24 15:38:38.082 +05:30 [INF] Executed endpoint 'ItineraryManagementSystem.Controllers.ItineraryApi.Update (ItineraryManagementSystem)'
+2026-04-24 15:38:38.088 +05:30 [INF] HTTP PUT /api/ItineraryApi/2 responded 400 in 159.9493 ms
+2026-04-24 15:38:38.101 +05:30 [INF] Request finished HTTP/2 PUT https://localhost:7118/api/ItineraryApi/2 - 400 null application/json; charset=utf-8 196.5417ms
+2026-04-24 15:38:43.213 +05:30 [INF] Request starting HTTP/2 PUT https://localhost:7118/api/ItineraryApi/2 - application/json 109
+2026-04-24 15:38:43.231 +05:30 [INF] Executing endpoint 'ItineraryManagementSystem.Controllers.ItineraryApi.Update (ItineraryManagementSystem)'
+2026-04-24 15:38:43.237 +05:30 [INF] Route matched with {action = "Update", controller = "ItineraryApi"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(Int32, ItineraryManagementSystem.DTOs.UpdateItineraryDto) on controller ItineraryManagementSystem.Controllers.ItineraryApi (ItineraryManagementSystem).
+2026-04-24 15:38:43.302 +05:30 [INF] Updating itinerary Id 2
+2026-04-24 15:38:43.310 +05:30 [WRN] ID mismatch RouteId=2, BodyId=0
+2026-04-24 15:38:43.321 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'ItineraryManagementSystem.Common.Response`1[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-04-24 15:38:43.334 +05:30 [INF] Executed action ItineraryManagementSystem.Controllers.ItineraryApi.Update (ItineraryManagementSystem) in 81.8351ms
+2026-04-24 15:38:43.346 +05:30 [INF] Executed endpoint 'ItineraryManagementSystem.Controllers.ItineraryApi.Update (ItineraryManagementSystem)'
+2026-04-24 15:38:43.355 +05:30 [INF] HTTP PUT /api/ItineraryApi/2 responded 400 in 124.5688 ms
+2026-04-24 15:38:43.368 +05:30 [INF] Request finished HTTP/2 PUT https://localhost:7118/api/ItineraryApi/2 - 400 null application/json; charset=utf-8 155.8525ms
+2026-04-24 15:38:50.093 +05:30 [INF] Request starting HTTP/2 PUT https://localhost:7118/api/ItineraryApi/2 - application/json 109
+2026-04-24 15:38:50.117 +05:30 [INF] Executing endpoint 'ItineraryManagementSystem.Controllers.ItineraryApi.Update (ItineraryManagementSystem)'
+2026-04-24 15:38:50.129 +05:30 [INF] Route matched with {action = "Update", controller = "ItineraryApi"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(Int32, ItineraryManagementSystem.DTOs.UpdateItineraryDto) on controller ItineraryManagementSystem.Controllers.ItineraryApi (ItineraryManagementSystem).
+2026-04-24 15:38:50.183 +05:30 [INF] Updating itinerary Id 2
+2026-04-24 15:38:50.207 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `i`.`Id`, `i`.`Destination`, `i`.`DurationDays`, `i`.`TravelDate`
+FROM `Itineraries` AS `i`
+WHERE `i`.`Id` = @__p_0
+LIMIT 1
+2026-04-24 15:38:50.309 +05:30 [INF] Executed DbCommand (30ms) [Parameters=[@p3='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+UPDATE `Itineraries` SET `Destination` = @p0, `DurationDays` = @p1, `TravelDate` = @p2
+WHERE `Id` = @p3;
+SELECT ROW_COUNT();
+2026-04-24 15:38:50.331 +05:30 [INF] Update operation status: true for Id 2
+2026-04-24 15:38:50.336 +05:30 [INF] Update status true for Id 2
+2026-04-24 15:38:50.341 +05:30 [INF] Executing OkObjectResult, writing value of type 'ItineraryManagementSystem.Common.Response`1[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-04-24 15:38:50.351 +05:30 [INF] Executed action ItineraryManagementSystem.Controllers.ItineraryApi.Update (ItineraryManagementSystem) in 211.2074ms
+2026-04-24 15:38:50.356 +05:30 [INF] Executed endpoint 'ItineraryManagementSystem.Controllers.ItineraryApi.Update (ItineraryManagementSystem)'
+2026-04-24 15:38:50.362 +05:30 [INF] HTTP PUT /api/ItineraryApi/2 responded 200 in 244.9433 ms
+2026-04-24 15:38:50.370 +05:30 [INF] Request finished HTTP/2 PUT https://localhost:7118/api/ItineraryApi/2 - 200 null application/json; charset=utf-8 280.131ms
+2026-04-24 15:38:57.560 +05:30 [INF] Request starting HTTP/2 PUT https://localhost:7118/api/ItineraryApi/2 - application/json 109
+2026-04-24 15:38:57.582 +05:30 [INF] Executing endpoint 'ItineraryManagementSystem.Controllers.ItineraryApi.Update (ItineraryManagementSystem)'
+2026-04-24 15:38:57.589 +05:30 [INF] Route matched with {action = "Update", controller = "ItineraryApi"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(Int32, ItineraryManagementSystem.DTOs.UpdateItineraryDto) on controller ItineraryManagementSystem.Controllers.ItineraryApi (ItineraryManagementSystem).
+2026-04-24 15:38:57.637 +05:30 [INF] Updating itinerary Id 2
+2026-04-24 15:38:57.644 +05:30 [WRN] ID mismatch RouteId=2, BodyId=3
+2026-04-24 15:38:57.655 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'ItineraryManagementSystem.Common.Response`1[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-04-24 15:38:57.668 +05:30 [INF] Executed action ItineraryManagementSystem.Controllers.ItineraryApi.Update (ItineraryManagementSystem) in 68.4037ms
+2026-04-24 15:38:57.675 +05:30 [INF] Executed endpoint 'ItineraryManagementSystem.Controllers.ItineraryApi.Update (ItineraryManagementSystem)'
+2026-04-24 15:38:57.697 +05:30 [INF] HTTP PUT /api/ItineraryApi/2 responded 400 in 114.9588 ms
+2026-04-24 15:38:57.710 +05:30 [INF] Request finished HTTP/2 PUT https://localhost:7118/api/ItineraryApi/2 - 400 null application/json; charset=utf-8 149.7644ms
+2026-04-24 15:39:04.760 +05:30 [INF] Request starting HTTP/2 PUT https://localhost:7118/api/ItineraryApi/2 - application/json 109
+2026-04-24 15:39:04.788 +05:30 [INF] Executing endpoint 'ItineraryManagementSystem.Controllers.ItineraryApi.Update (ItineraryManagementSystem)'
+2026-04-24 15:39:04.792 +05:30 [INF] Route matched with {action = "Update", controller = "ItineraryApi"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(Int32, ItineraryManagementSystem.DTOs.UpdateItineraryDto) on controller ItineraryManagementSystem.Controllers.ItineraryApi (ItineraryManagementSystem).
+2026-04-24 15:39:04.847 +05:30 [INF] Updating itinerary Id 2
+2026-04-24 15:39:04.884 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `i`.`Id`, `i`.`Destination`, `i`.`DurationDays`, `i`.`TravelDate`
+FROM `Itineraries` AS `i`
+WHERE `i`.`Id` = @__p_0
+LIMIT 1
+2026-04-24 15:39:04.923 +05:30 [INF] Executed DbCommand (9ms) [Parameters=[@p3='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+UPDATE `Itineraries` SET `Destination` = @p0, `DurationDays` = @p1, `TravelDate` = @p2
+WHERE `Id` = @p3;
+SELECT ROW_COUNT();
+2026-04-24 15:39:04.948 +05:30 [INF] Update operation status: true for Id 2
+2026-04-24 15:39:04.954 +05:30 [INF] Update status true for Id 2
+2026-04-24 15:39:04.966 +05:30 [INF] Executing OkObjectResult, writing value of type 'ItineraryManagementSystem.Common.Response`1[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-04-24 15:39:04.982 +05:30 [INF] Executed action ItineraryManagementSystem.Controllers.ItineraryApi.Update (ItineraryManagementSystem) in 177.6135ms
+2026-04-24 15:39:04.998 +05:30 [INF] Executed endpoint 'ItineraryManagementSystem.Controllers.ItineraryApi.Update (ItineraryManagementSystem)'
+2026-04-24 15:39:05.006 +05:30 [INF] HTTP PUT /api/ItineraryApi/2 responded 200 in 218.3958 ms
+2026-04-24 15:39:05.027 +05:30 [INF] Request finished HTTP/2 PUT https://localhost:7118/api/ItineraryApi/2 - 200 null application/json; charset=utf-8 268.1823ms
+2026-04-24 15:39:35.361 +05:30 [INF] Request starting HTTP/2 DELETE https://localhost:7118/api/ItineraryApi/2 - null null
+2026-04-24 15:39:35.418 +05:30 [INF] Executing endpoint 'ItineraryManagementSystem.Controllers.ItineraryApi.Delete (ItineraryManagementSystem)'
+2026-04-24 15:39:35.442 +05:30 [INF] Route matched with {action = "Delete", controller = "ItineraryApi"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(Int32) on controller ItineraryManagementSystem.Controllers.ItineraryApi (ItineraryManagementSystem).
+2026-04-24 15:39:35.500 +05:30 [INF] Deleting itinerary Id 2
+2026-04-24 15:39:35.590 +05:30 [INF] Executed DbCommand (34ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `i`.`Id`, `i`.`Destination`, `i`.`DurationDays`, `i`.`TravelDate`
+FROM `Itineraries` AS `i`
+WHERE `i`.`Id` = @__p_0
+LIMIT 1
+2026-04-24 15:39:35.661 +05:30 [INF] Executed DbCommand (18ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET AUTOCOMMIT = 1;
+DELETE FROM `Itineraries`
+WHERE `Id` = @p0;
+SELECT ROW_COUNT();
+2026-04-24 15:39:35.685 +05:30 [INF] Delete operation status: true for Id 2
+2026-04-24 15:39:35.694 +05:30 [INF] Itinerary deleted successfully for Id 2
+2026-04-24 15:39:35.701 +05:30 [INF] Executing OkObjectResult, writing value of type 'ItineraryManagementSystem.Common.Response`1[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-04-24 15:39:35.711 +05:30 [INF] Executed action ItineraryManagementSystem.Controllers.ItineraryApi.Delete (ItineraryManagementSystem) in 255.6394ms
+2026-04-24 15:39:35.720 +05:30 [INF] Executed endpoint 'ItineraryManagementSystem.Controllers.ItineraryApi.Delete (ItineraryManagementSystem)'
+2026-04-24 15:39:35.733 +05:30 [INF] HTTP DELETE /api/ItineraryApi/2 responded 200 in 314.3218 ms
+2026-04-24 15:39:35.749 +05:30 [INF] Request finished HTTP/2 DELETE https://localhost:7118/api/ItineraryApi/2 - 200 null application/json; charset=utf-8 387.8226ms
+2026-04-24 15:39:41.142 +05:30 [INF] Request starting HTTP/2 DELETE https://localhost:7118/api/ItineraryApi/2 - null null
+2026-04-24 15:39:41.165 +05:30 [INF] Executing endpoint 'ItineraryManagementSystem.Controllers.ItineraryApi.Delete (ItineraryManagementSystem)'
+2026-04-24 15:39:41.170 +05:30 [INF] Route matched with {action = "Delete", controller = "ItineraryApi"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(Int32) on controller ItineraryManagementSystem.Controllers.ItineraryApi (ItineraryManagementSystem).
+2026-04-24 15:39:41.215 +05:30 [INF] Deleting itinerary Id 2
+2026-04-24 15:39:41.253 +05:30 [INF] Executed DbCommand (15ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `i`.`Id`, `i`.`Destination`, `i`.`DurationDays`, `i`.`TravelDate`
+FROM `Itineraries` AS `i`
+WHERE `i`.`Id` = @__p_0
+LIMIT 1
+2026-04-24 15:39:41.267 +05:30 [WRN] Delete failed. Id 2 not found
+2026-04-24 15:39:41.271 +05:30 [WRN] Delete failed for Id 2
+2026-04-24 15:39:41.280 +05:30 [INF] Executing NotFoundObjectResult, writing value of type 'ItineraryManagementSystem.Common.Response`1[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-04-24 15:39:41.285 +05:30 [INF] Executed action ItineraryManagementSystem.Controllers.ItineraryApi.Delete (ItineraryManagementSystem) in 104.1178ms
+2026-04-24 15:39:41.291 +05:30 [INF] Executed endpoint 'ItineraryManagementSystem.Controllers.ItineraryApi.Delete (ItineraryManagementSystem)'
+2026-04-24 15:39:41.297 +05:30 [INF] HTTP DELETE /api/ItineraryApi/2 responded 404 in 132.4189 ms
+2026-04-24 15:39:41.312 +05:30 [INF] Request finished HTTP/2 DELETE https://localhost:7118/api/ItineraryApi/2 - 404 null application/json; charset=utf-8 171.2494ms
+2026-04-24 15:39:45.118 +05:30 [INF] Request starting HTTP/2 DELETE https://localhost:7118/api/ItineraryApi/2 - null null
+2026-04-24 15:39:45.134 +05:30 [INF] Executing endpoint 'ItineraryManagementSystem.Controllers.ItineraryApi.Delete (ItineraryManagementSystem)'
+2026-04-24 15:39:45.139 +05:30 [INF] Route matched with {action = "Delete", controller = "ItineraryApi"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(Int32) on controller ItineraryManagementSystem.Controllers.ItineraryApi (ItineraryManagementSystem).
+2026-04-24 15:39:45.210 +05:30 [INF] Deleting itinerary Id 2
+2026-04-24 15:39:45.242 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `i`.`Id`, `i`.`Destination`, `i`.`DurationDays`, `i`.`TravelDate`
+FROM `Itineraries` AS `i`
+WHERE `i`.`Id` = @__p_0
+LIMIT 1
+2026-04-24 15:39:45.259 +05:30 [WRN] Delete failed. Id 2 not found
+2026-04-24 15:39:45.267 +05:30 [WRN] Delete failed for Id 2
+2026-04-24 15:39:45.272 +05:30 [INF] Executing NotFoundObjectResult, writing value of type 'ItineraryManagementSystem.Common.Response`1[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-04-24 15:39:45.286 +05:30 [INF] Executed action ItineraryManagementSystem.Controllers.ItineraryApi.Delete (ItineraryManagementSystem) in 134.2122ms
+2026-04-24 15:39:45.298 +05:30 [INF] Executed endpoint 'ItineraryManagementSystem.Controllers.ItineraryApi.Delete (ItineraryManagementSystem)'
+2026-04-24 15:39:45.304 +05:30 [INF] HTTP DELETE /api/ItineraryApi/2 responded 404 in 169.7503 ms
+2026-04-24 15:39:45.319 +05:30 [INF] Request finished HTTP/2 DELETE https://localhost:7118/api/ItineraryApi/2 - 404 null application/json; charset=utf-8 201.1815ms
+2026-04-24 15:39:49.178 +05:30 [INF] Request starting HTTP/2 DELETE https://localhost:7118/api/ItineraryApi/-1 - null null
+2026-04-24 15:39:49.220 +05:30 [INF] Executing endpoint 'ItineraryManagementSystem.Controllers.ItineraryApi.Delete (ItineraryManagementSystem)'
+2026-04-24 15:39:49.230 +05:30 [INF] Route matched with {action = "Delete", controller = "ItineraryApi"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(Int32) on controller ItineraryManagementSystem.Controllers.ItineraryApi (ItineraryManagementSystem).
+2026-04-24 15:39:49.283 +05:30 [INF] Deleting itinerary Id -1
+2026-04-24 15:39:49.326 +05:30 [INF] Executed DbCommand (19ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `i`.`Id`, `i`.`Destination`, `i`.`DurationDays`, `i`.`TravelDate`
+FROM `Itineraries` AS `i`
+WHERE `i`.`Id` = @__p_0
+LIMIT 1
+2026-04-24 15:39:49.348 +05:30 [WRN] Delete failed. Id -1 not found
+2026-04-24 15:39:49.354 +05:30 [WRN] Delete failed for Id -1
+2026-04-24 15:39:49.364 +05:30 [INF] Executing NotFoundObjectResult, writing value of type 'ItineraryManagementSystem.Common.Response`1[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-04-24 15:39:49.372 +05:30 [INF] Executed action ItineraryManagementSystem.Controllers.ItineraryApi.Delete (ItineraryManagementSystem) in 125.8549ms
+2026-04-24 15:39:49.384 +05:30 [INF] Executed endpoint 'ItineraryManagementSystem.Controllers.ItineraryApi.Delete (ItineraryManagementSystem)'
+2026-04-24 15:39:49.396 +05:30 [INF] HTTP DELETE /api/ItineraryApi/-1 responded 404 in 175.9403 ms
+2026-04-24 15:39:49.407 +05:30 [INF] Request finished HTTP/2 DELETE https://localhost:7118/api/ItineraryApi/-1 - 404 null application/json; charset=utf-8 228.6374ms
