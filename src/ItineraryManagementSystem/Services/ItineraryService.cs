@@ -8,18 +8,24 @@ namespace ItineraryManagementSystem.Services
     public class ItineraryService : IItineraryService
     {
         private readonly IItineraryRepository _itineraryRepository;
+        private readonly ILogger<ItineraryService> _logger;
 
-        public ItineraryService(IItineraryRepository itineraryRepository)
+        public ItineraryService(IItineraryRepository itineraryRepository, ILogger<ItineraryService> logger)
         {
             _itineraryRepository = itineraryRepository;
+            _logger = logger;
         }
 
         public async Task<Response> GetAsync(ItineraryQueryParams query)
         {
+            _logger.LogInformation("Fetching itineraries with query {@Query}", query);
+
             var (items, totalCount) = await _itineraryRepository.GetAsync(query);
 
             if (!items.Any())
             {
+                _logger.LogWarning("No itineraries found for query {@Query}", query);
+
                 return new Response
                 {
                     IsSuccess = false,
@@ -53,10 +59,14 @@ namespace ItineraryManagementSystem.Services
 
         public async Task<Response> GetByIdAsync(int id)
         {
+            _logger.LogInformation("Fetching itinerary by Id {Id}", id);
+
             var data = await _itineraryRepository.GetByIdAsync(id);
 
             if (data == null)
             {
+                _logger.LogWarning("Itinerary not found for Id {Id}", id);
+
                 return new Response
                 {
                     IsSuccess = false,
@@ -64,23 +74,23 @@ namespace ItineraryManagementSystem.Services
                 };
             }
 
-            var dto = new ItineraryDto
-            {
-                Id = data.Id,
-                Destination = data.Destination,
-                TravelDate = data.TravelDate,
-                DurationDays = data.DurationDays
-            };
-
             return new Response
             {
                 IsSuccess = true,
-                Data = dto
+                Data = new ItineraryDto
+                {
+                    Id = data.Id,
+                    Destination = data.Destination,
+                    TravelDate = data.TravelDate,
+                    DurationDays = data.DurationDays
+                }
             };
         }
 
         public async Task<Response> CreateAsync(CreateItineraryDto dto)
         {
+            _logger.LogInformation("Creating itinerary for {Destination}", dto.Destination);
+
             var entity = new Itinerary
             {
                 Destination = dto.Destination,
@@ -89,6 +99,8 @@ namespace ItineraryManagementSystem.Services
             };
 
             var created = await _itineraryRepository.CreateAsync(entity);
+
+            _logger.LogInformation("Itinerary created with Id {Id}", created.Id);
 
             return new Response
             {
@@ -100,8 +112,12 @@ namespace ItineraryManagementSystem.Services
 
         public async Task<Response> UpdateAsync(int id, UpdateItineraryDto dto)
         {
+            _logger.LogInformation("Updating itinerary Id {Id}", id);
+
             if (id != dto.Id)
             {
+                _logger.LogWarning("ID mismatch for update. RouteId={Id}, BodyId={BodyId}", id, dto.Id);
+
                 return new Response
                 {
                     IsSuccess = false,
@@ -113,6 +129,8 @@ namespace ItineraryManagementSystem.Services
 
             if (existing == null)
             {
+                _logger.LogWarning("Update failed. Itinerary not found for Id {Id}", id);
+
                 return new Response
                 {
                     IsSuccess = false,
@@ -126,6 +144,8 @@ namespace ItineraryManagementSystem.Services
 
             await _itineraryRepository.UpdateAsync(existing);
 
+            _logger.LogInformation("Itinerary updated successfully for Id {Id}", id);
+
             return new Response
             {
                 IsSuccess = true,
@@ -135,16 +155,22 @@ namespace ItineraryManagementSystem.Services
 
         public async Task<Response> DeleteAsync(int id)
         {
+            _logger.LogInformation("Deleting itinerary Id {Id}", id);
+
             var success = await _itineraryRepository.DeleteAsync(id);
 
             if (!success)
             {
+                _logger.LogWarning("Delete failed. Itinerary not found for Id {Id}", id);
+
                 return new Response
                 {
                     IsSuccess = false,
                     Message = $"Itinerary {id} not found"
                 };
             }
+
+            _logger.LogInformation("Itinerary deleted successfully for Id {Id}", id);
 
             return new Response
             {

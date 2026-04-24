@@ -6,7 +6,7 @@ using ItineraryManagementSystem.Models;
 using ItineraryManagementSystem.Services;
 using ItineraryManagementSystem.Validators;
 using Microsoft.EntityFrameworkCore;
-
+using Serilog;
 namespace ItineraryManagementSystem
 {
     public class Program
@@ -19,12 +19,21 @@ namespace ItineraryManagementSystem
 
             var connectionString = Environment.GetEnvironmentVariable("DB_SQL_CONNECTION");
 
+            // Serilog configuration
+            Log.Logger = new LoggerConfiguration()
+                .WriteTo.Console()
+                .WriteTo.File(path: $"Logs/{DateTime.Now:yyyy-MM-dd}/log-.txt", rollingInterval: RollingInterval.Hour)
+                .CreateLogger();
+
+            builder.Host.UseSerilog();
+
             // Add services
             builder.Services.AddControllers();
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
             builder.Services.AddFluentValidationAutoValidation();
             builder.Services.AddValidatorsFromAssemblyContaining<CreateItineraryValidator>();
+            builder.Services.AddValidatorsFromAssemblyContaining<ItineraryQueryParamsValidator>();
             builder.Services.AddScoped<IItineraryRepository, ItineraryRepository>();
             builder.Services.AddScoped<IItineraryService, ItineraryService>();
             builder.Services.AddDbContext<ItineraryDbContext>(options =>
@@ -32,6 +41,8 @@ namespace ItineraryManagementSystem
                 ServerVersion.AutoDetect(connectionString)));
 
             var app = builder.Build();
+
+            app.UseSerilogRequestLogging(); // logs every HTTP request
 
             if (app.Environment.IsDevelopment())
             {

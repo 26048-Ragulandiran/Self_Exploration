@@ -4,27 +4,29 @@ using Microsoft.EntityFrameworkCore;
 
 public class ItineraryRepository : IItineraryRepository
 {
-    private readonly ItineraryDbContext _context;
+    private readonly ItineraryDbContext _itineraryDbContext;
+    private readonly ILogger<ItineraryRepository> _logger;
 
-    public ItineraryRepository(ItineraryDbContext context)
+    public ItineraryRepository(ItineraryDbContext context, ILogger<ItineraryRepository> logger)
     {
-        _context = context;
+        _itineraryDbContext = context;
+        _logger = logger;
     }
 
     public async Task<(IEnumerable<Itinerary>, int)> GetAsync(ItineraryQueryParams query)
     {
-        var itineraries = _context.Itineraries.AsQueryable();
+        _logger.LogInformation("Applying filters in repository");
+
+        var itineraries = _itineraryDbContext.Itineraries.AsQueryable();
 
         if (!string.IsNullOrEmpty(query.Destination))
         {
-            itineraries = itineraries
-                .Where(x => x.Destination.Contains(query.Destination));
+            itineraries = itineraries.Where(x => x.Destination.Contains(query.Destination));
         }
 
         if (query.TravelDate.HasValue)
         {
-            itineraries = itineraries
-                .Where(x => x.TravelDate.Date == query.TravelDate.Value.Date);
+            itineraries = itineraries.Where(x => x.TravelDate.Date == query.TravelDate.Value.Date);
         }
 
         var totalCount = await itineraries.CountAsync();
@@ -39,28 +41,44 @@ public class ItineraryRepository : IItineraryRepository
 
     public async Task<Itinerary?> GetByIdAsync(int id)
     {
-        return await _context.Itineraries.FindAsync(id);
+        return await _itineraryDbContext.Itineraries.FindAsync(id);
     }
 
     public async Task<Itinerary> CreateAsync(Itinerary entity)
     {
-        await _context.Itineraries.AddAsync(entity);
-        await _context.SaveChangesAsync();
+        await _itineraryDbContext.Itineraries.AddAsync(entity);
+        await _itineraryDbContext.SaveChangesAsync();
+
+        _logger.LogInformation("Inserted itinerary with Id {Id}", entity.Id);
+
         return entity;
     }
 
     public async Task<bool> UpdateAsync(Itinerary entity)
     {
-        _context.Itineraries.Update(entity);
-        return await _context.SaveChangesAsync() > 0;
+        _itineraryDbContext.Itineraries.Update(entity);
+        var result = await _itineraryDbContext.SaveChangesAsync() > 0;
+
+        _logger.LogInformation("Update operation status: {Result} for Id {Id}", result, entity.Id);
+
+        return result;
     }
 
     public async Task<bool> DeleteAsync(int id)
     {
-        var data = await _context.Itineraries.FindAsync(id);
-        if (data == null) return false;
+        var data = await _itineraryDbContext.Itineraries.FindAsync(id);
 
-        _context.Itineraries.Remove(data);
-        return await _context.SaveChangesAsync() > 0;
+        if (data == null)
+        {
+            _logger.LogWarning("Delete failed. Id {Id} not found", id);
+            return false;
+        }
+
+        _itineraryDbContext.Itineraries.Remove(data);
+        var result = await _itineraryDbContext.SaveChangesAsync() > 0;
+
+        _logger.LogInformation("Delete operation status: {Result} for Id {Id}", result, id);
+
+        return result;
     }
 }
