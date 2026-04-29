@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "content": "Lorem ipsum dolor sit amet",
+    "tag": "alpha"
+  },
+  {
+    "id": 2,
+    "content": "Consectetur adipiscing elit",
+    "tag": "beta"
+  },
+  {
+    "id": 3,
+    "content": "Sed do eiusmod tempor",
+    "tag": "gamma"
+  },
+  {
+    "id": 4,
+    "content": "Incididunt ut labore et dolore",
+    "tag": "delta"
+  }
+]
